@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dopple.io | Coming Soon</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            :root {
+            --mouseX: 50%;
+            --mouseY: 50%;
+            }
+            @font-face {
+                font-family: 'Akzidenz-Next';
+                font-weight: 400;
+                font-display: swap;
+                font-style: normal;
+                src: url('Akzidenz-Grotesk-Next-Pro.woff2') format('woff2'),
+                    url('Akzidenz-Grotesk-Next-Pro.woff') format('woff'),
+                    url('Akzidenz-Grotesk-Next-Pro.ttf') format('truetype');
+            }
+
+            @font-face {
+                font-family: 'Akzidenz-Next-Bold';
+                font-weight: 700;
+                font-display: swap;
+                font-style: normal;
+                src: url('Akzidenz-Grotesk-Next-Pro-Bold.woff2') format('woff2'),
+                    url('Akzidenz-Grotesk-Next-Pro-Bold.woff') format('woff'),
+                    url('Akzidenz-Grotesk-Next-Pro-Bold.ttf') format('truetype');
+            }
+            .loading * {
+                animation-play-state: paused !important;
+            }
+            .dopple-logo {
+                animation-delay: 400ms;
+                margin-bottom: 2rem;
+                max-width: 100%;
+                width: 8rem;
+            }
+            .dopple-logo path {
+                fill: #FFF;
+            }
+            @media screen and (min-width: 30rem) {
+                .dopple-logo {
+                    width: 12rem;
+                }
+            }
+            @media screen and (min-width: 52rem) {
+                .dopple-logo {
+                    width: 14rem;
+                }
+            }
+        </style>
+    </head>
+    <body style="overflow: hidden;">
+        <picture>
+            <source media="(min-width:768px)" srcset="bg-full-optimized.jpg" type="image/jpeg">
+            <source srcset="bg-mobile-optimized.jpg" type="image/jpeg">
+            <img alt="" src="bg-full-optimized.jpg" />
+        </picture>
+        <div class="content">
+            <svg class="dopple-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1131.68 783.3">
+                <path class="cls-1" d="M886.28,688.66a14.38,14.38,0,0,1-14.38-14.38V393.88a14.39,14.39,0,1,1,28.77,0v280.4A14.38,14.38,0,0,1,886.28,688.66Z" />
+                <path class="cls-1" d="M318.56,690.67A105.77,105.77,0,1,1,424.33,584.9,105.89,105.89,0,0,1,318.56,690.67Zm0-182.78a77,77,0,1,0,77,77A77.1,77.1,0,0,0,318.56,507.89Z" />
+                <path class="cls-1" d="M1131.5,567.79a105.78,105.78,0,1,0-104.39,122.88A126.78,126.78,0,0,0,1122.46,647,14.38,14.38,0,1,0,1100.79,628c-18.51,21.2-46.06,33.86-73.68,33.86a77.09,77.09,0,0,1-76.91-73.15H1117a14.38,14.38,0,0,0,14.38-14.38c0-.4,0-.79-.06-1.18A14.36,14.36,0,0,0,1131.5,567.79Zm-104.39-59.9A76.64,76.64,0,0,1,1100,560H954.26A77.13,77.13,0,0,1,1027.11,507.89Z" />
+                <path class="cls-1" d="M539.44,479.65c-25.06,0-48,10-65.39,26.47V492.93a14.38,14.38,0,0,0-28.76,0v60.29c0,.12-.08.23-.11.35v62.62c0,.11.07.23.11.35V768.91a14.38,14.38,0,1,0,28.76,0V663.82a95,95,0,0,0,65.39,26.32c54.44,0,98.73-47.21,98.73-105.24S593.88,479.65,539.44,479.65Zm0,182.77C513,662.42,489,646.56,476.6,621h0a82.24,82.24,0,0,1-8.17-36.12c0-42.75,31.86-77.53,71-77.53s71,34.78,71,77.53S578.6,662.42,539.44,662.42Z" />
+                <path class="cls-1" d="M193,552.83c0-.12-.08-.23-.11-.35v-159a14.39,14.39,0,1,0-28.77,0V505.19a95,95,0,0,0-65.39-26.32C44.29,478.87,0,526.09,0,584.12S44.29,689.37,98.73,689.37c25.06,0,48-10,65.39-26.47v13.18a14.39,14.39,0,1,0,28.77,0V615.8c0-.12.07-.23.11-.35ZM98.73,661.65c-39.15,0-71-34.78-71-77.53s31.86-77.53,71-77.53c26.41,0,50.49,15.87,62.84,41.41h0a82.2,82.2,0,0,1,8.16,36.12C169.74,626.87,137.89,661.65,98.73,661.65Z" />
+                <path class="cls-1" d="M752.51,479.65c-25.06,0-48,10-65.39,26.47V492.93a14.38,14.38,0,0,0-28.76,0v60.29c0,.12-.08.23-.11.35v62.62c0,.11.07.23.11.35V768.91a14.38,14.38,0,1,0,28.76,0V663.82a95,95,0,0,0,65.39,26.32c54.44,0,98.74-47.21,98.74-105.24S807,479.65,752.51,479.65Zm0,182.77c-26.41,0-50.49-15.86-62.84-41.4h0a82.24,82.24,0,0,1-8.17-36.12c0-42.75,31.86-77.53,71-77.53s71,34.78,71,77.53S791.67,662.42,752.51,662.42Z" />
+                <path class="cls-1" d="M507.57,233.29C489.28,231,472.89,219.13,462.41,206a71.38,71.38,0,0,0-7.34,29.48c-1.18,39.95,32.31,72,72.28,72s72.53-31.59,72.07-72.49C599.5,235,525.36,235.56,507.57,233.29Z" />
+                <path class="cls-1" d="M443.17,239.8c-1.19-49.1,38.57-84.43,83.92-84.43h31.15A41.41,41.41,0,0,0,599.65,114h0a41.41,41.41,0,0,0-41.41-41.41H540.15A102.86,102.86,0,0,0,437.29,175.4v42.86c0,8,3,25.08,7.57,37.07a.13.13,0,0,0,.25-.08A76.13,76.13,0,0,1,443.17,239.8Z" />
+                <path class="cls-1" d="M652.93,0a41.45,41.45,0,0,0-41.45,41.46v194.1A84.21,84.21,0,0,1,545,317.76a.12.12,0,0,0,0,.24h43.68c56.8,0,105.66-46.05,105.66-102.86V41.46A41.46,41.46,0,0,0,652.93,0Z" />
+            </svg>
+            <h1>Big things are coming.</h1>
+            <h2>Dopple is revolutionizing 3D + AR for ecommerce.</h2>
+            <div class="input-container">
+                <input type="email" placeholder="you@website.com" />
+                <button>Notify me</button>
+            </div>
+            <span class="input-container-bottom-text">Be the first to get notified when we launch.</span>
+        </div>
+        <script>
+            // Animate elements in on page load
+            document.body.classList.add('loading')
+            window.addEventListener('load', function () {
+                console.log('loaded')
+                document.body.classList.remove('loading')
+                setTimeout(function () {
+                    document.body.removeAttribute('style')
+                }, 3000)
+            }, false)
+
+            // Mouse effects
+            const d = document.documentElement
+            d.addEventListener('mousemove', function(e) {
+                let multiplier = 1
+                let ow = d.offsetWidth
+                let oh = d.offsetHeight
+                
+                let xValue = ((e.clientX / ow) - 0.5).toFixed(2) * multiplier
+                let yValue = -((e.clientY / oh) - 0.5).toFixed(2) * multiplier
+
+                d.style.setProperty('--mouseX', xValue)
+                d.style.setProperty('--mouseY', yValue)
+            })
+        </script>
+    </body>
+</html>
