@@ -8,8 +8,9 @@
         <link rel="stylesheet" href="style.css">
         <style>
             :root {
-            --mouseX: 50%;
-            --mouseY: 50%;
+                --deg: 0;
+                --mouseX: 50%;
+                --mouseY: 50%;
             }
             @font-face {
                 font-family: 'Akzidenz-Next';
@@ -94,15 +95,23 @@
             // Mouse effects
             const d = document.documentElement
             d.addEventListener('mousemove', function(e) {
-                let multiplier = 1
+                let multiplier = 10
+
                 let ow = d.offsetWidth
                 let oh = d.offsetHeight
                 
-                let xValue = ((e.clientX / ow) - 0.5).toFixed(2) * multiplier
-                let yValue = -((e.clientY / oh) - 0.5).toFixed(2) * multiplier
+                let xValue = ((e.clientX / ow) - 0.5).toFixed(2)
+                let yValue = -((e.clientY / oh) - 0.5).toFixed(2)
+
+                let deg = Math.sqrt((xValue * xValue) + (yValue * yValue)).toFixed(2) * multiplier
 
                 d.style.setProperty('--mouseX', xValue)
                 d.style.setProperty('--mouseY', yValue)
+                d.style.setProperty('--deg', deg + 'deg')
+            })
+            d.addEventListener('mouseout', function (e) {
+                d.style.setProperty('--mouseX', 0)
+                d.style.setProperty('--mouseY', 0)
             })
         </script>
     </body>
