@@ -340,7 +340,6 @@ h2 {
     margin-bottom: 3rem;
 }
 
-/* .input-container { */
 .hbspt-form {
     animation-delay: 700ms;
     background: #FFF;
@@ -356,7 +355,6 @@ h2 {
     width: 24rem;
 }
 
-/* .input-container:focus-within { */
 .hbspt-form:focus-within {
     outline: solid 0.25rem rgba(239, 84, 147, 0.5);
 }
@@ -366,6 +364,10 @@ h2 {
 .hbspt-form .hs-email .input {
     display: flex;
     flex: 1 1 auto;
+}
+
+.hbspt-form form {
+    position: relative;
 }
 
 .hbspt-form .hs-email {
@@ -387,13 +389,16 @@ h2 {
     width: 1px !important;
 }
 
-/* .input-container input { */
-/* .hbspt-form input[type="email"] {
-    border: 0;
-    flex: 1 1 auto;
-    padding-left: 0.75rem;
-    width: 8rem;
-} */
+.hbspt-form .hs_error_rollup {
+    bottom: 100%;
+    color: white;
+    position: absolute;
+}
+
+.hbspt-form .hs_error_rollup ul {
+    list-style-type: none;
+    margin-bottom: 0;
+}
 
 .hbspt-form input[type="email"] {
     border: 0;
@@ -403,14 +408,11 @@ h2 {
     width: 8rem;
 }
 
-/* .input-container input:focus,
-.input-container input:focus-visible { */
 .hbspt-form input[type="email"]:focus,
 .hbspt-form input[type="email"]:focus-visible {
     outline: none;
 }
 
-/* .input-container button { */
 .hbspt-form input[type="submit"] {
     background: #EF5493;
     border: 0;
@@ -441,7 +443,6 @@ h2 {
         margin-bottom: 4rem;
     }
 
-    /* .input-container button { */
     .hbspt-form input[type="submit"] {
         font-size: 0.875rem;
         padding: 0.625rem 1.25rem;
