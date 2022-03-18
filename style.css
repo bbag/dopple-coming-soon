@@ -392,11 +392,24 @@ h2 {
     bottom: 100%;
     color: white;
     position: absolute;
+    left: 0;
 }
 
 .hbspt-form .hs_error_rollup ul {
     list-style-type: none;
-    margin-bottom: 0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.submitted-message {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 100%;
 }
 
 .hbspt-form input[type="email"] {
